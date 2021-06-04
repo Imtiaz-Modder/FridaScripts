@@ -16,7 +16,7 @@ setTimeout(function(){
 			sock.connect.overload("java.net.SocketAddress", "int").call(this, endPoint, tmout);
 		}		
 		sock.getInetAddress.implementation = function(){
-			ret = sock.getInetAddress.call(this);
+			var ret = sock.getInetAddress.call(this);
 			console.log("GetInetAddress() = ",ret.toString());
 			return ret;
 		}     					
