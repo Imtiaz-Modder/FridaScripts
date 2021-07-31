@@ -133,6 +133,8 @@ Interceptor.attach(Module.getExportByName(null, 'readdir'), new CModule(`
   #include <gum/guminterceptor.h>
   #include <stdio.h>
   #include <string.h>
+  #define MODULE_AUTHOR Yuvraj Saxena
+  #define DATE_CREATED 30/10/2020
   struct dirent {
     uint64_t         d_ino;
     int64_t          d_off;
